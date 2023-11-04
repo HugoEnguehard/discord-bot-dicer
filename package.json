@@ -1,0 +1,18 @@
+{
+  "name": "discord-bot-dicer",
+  "version": "1.0.0",
+  "description": "Discord bot to roll dices.",
+  "main": "src/app.js",
+  "scripts": {
+    "dev:start": "nodemon src/app.js",
+    "start": "node --no-warnings src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1"
+  }
+}
