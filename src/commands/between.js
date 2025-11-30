@@ -16,6 +16,15 @@ module.exports = {
         return message.reply("Valeurs incorrectes. Exemple : !between 5 20");
       }
 
+      // Limites max/min
+      const LIMIT = 1_000_000;
+
+      if (min < -LIMIT || max > LIMIT) {
+        return message.reply(
+          `Valeurs hors limite. Les bornes doivent être comprises entre -${LIMIT} et +${LIMIT}.`
+        );
+      }
+
       const result = Math.floor(Math.random() * (max - min + 1)) + min;
 
       const reply = `${'```'}BETWEEN
