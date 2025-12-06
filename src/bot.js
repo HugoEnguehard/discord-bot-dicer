@@ -2,6 +2,7 @@ require('dotenv').config();
 const { Client, IntentsBitField } = require('discord.js');
 const { commands } = require('./commands');
 const { initCurrentWeekFile } = require('./services/storage');
+const { stopTimerForMessage } = require('./services/timer');
 
 const client = new Client({
   intents: [
@@ -34,6 +35,18 @@ client.on('messageCreate', async (message) => {
     console.error(`Erreur dans la commande !${commandName}:`, error);
     message.reply('Une erreur est survenue lors de l’exécution de la commande.');
   }
+});
+
+/**
+ * On vérifie si le message supprimé a un auteur, et si cet auteur est bien le bot.
+ * Si oui on transfert l'id du message à la fonction pour stopper le timer.
+ */
+client.on('messageDelete', (deletedMessage) => {
+  if (!deletedMessage.author) return;
+
+  if (deletedMessage.author.id !== client.user.id) return;
+
+  stopTimerForMessage(deletedMessage.id);
 });
 
 client.login(process.env.TOKEN);

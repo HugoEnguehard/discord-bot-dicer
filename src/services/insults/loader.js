@@ -1,32 +1,34 @@
 const fs = require('fs');
 const path = require('path');
 
-let insultsCache = null;
-
 function loadInsults() {
-  if (insultsCache) return insultsCache;
-
-  const filePath = path.join(__dirname, '..', 'data', 'insults.json');
+  const filePath = path.join(__dirname, '..', '..', 'data', 'insults.json');
 
   if (!fs.existsSync(filePath)) {
     console.warn("[Insults] Le fichier insults.json n'existe pas.");
-    insultsCache = [];
-    return insultsCache;
+    return [];
   }
 
   try {
     const raw = fs.readFileSync(filePath, 'utf8');
-    insultsCache = JSON.parse(raw);
+    const insults = JSON.parse(raw);
+
+    if (!Array.isArray(insults)) {
+      console.error("[Insults] Le JSON n'est pas un tableau.");
+      return [];
+    }
+
+    return insults;
   } catch (err) {
     console.error("[Insults] Erreur de lecture du JSON :", err.message);
-    insultsCache = [];
+    return [];
   }
-
-  return insultsCache;
 }
 
-function getRandomInsult() {
-  const insults = loadInsults();
+function getRandomInsult(isPingCommand = false) {
+  let insults = loadInsults();
+  if(isPingCommand) insults = [...insults, "TA DA DA DAAAAAAA"];
+
   if (insults.length === 0) return "Connard";
 
   const index = Math.floor(Math.random() * insults.length);

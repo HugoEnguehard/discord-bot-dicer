@@ -8,6 +8,9 @@ const truth = require('./truth');
 const timer = require('./timer');
 const between = require('./between');
 const coin = require('./coin');
+const insult = require('./insult');
+const stopinsults = require('./stopinsults');
+const showinsults = require('./showinsults');
 
 const commands = {
   [roll.name]: roll,
@@ -20,6 +23,9 @@ const commands = {
   [timer.name]: timer,
   [between.name]: between,
   [coin.name]: coin,
+  [insult.name]: insult,
+  [stopinsults.name]: stopinsults,
+  [showinsults.name]: showinsults,
 };
 
 module.exports = { commands };

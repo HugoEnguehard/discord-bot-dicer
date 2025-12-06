@@ -2,13 +2,13 @@ const { ChannelType } = require('discord.js');
 
 // Config par serveur
 const serverConfigs = {
-  "451675976879964172": { // ID de Feed The Tardos
-    voiceChannelId: "700526149544968292", // ID du salon vocal
-    mjId: "316620118610280448", // ID du MJ
+  [process.env.FTT_ID]: {
+    voiceChannelId: process.env.FTT_VOCAL_ID,
+    mjId: process.env.ADMIN_ID,
   },
-  "1230231833975984160": { // ID de One PLS
-    voiceChannelId: "1230231833975984164", // ID du salon vocal
-    mjId: "603932446727208975", // ID du MJ
+  [process.env.OPLS_ID]: {
+    voiceChannelId: process.env.OPLS_VOCAL_ID,
+    mjId: process.env.HELIX_ID,
   },
 };
 

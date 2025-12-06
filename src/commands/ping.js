@@ -1,11 +1,11 @@
-const { getRandomInsult } = require('../services/insults');
+const { getRandomInsult } = require('../services/insults/loader');
 
 module.exports = {
   name: 'ping',
   description: 'Répond pong avec une insulte aléatoire.',
   async execute(message) {
     try {
-      const insult = getRandomInsult();
+      const insult = getRandomInsult(true);
       const reply = `${'```'}Pong ${insult} !${'```'}`;
 
       return message.reply(reply);
