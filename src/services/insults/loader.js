@@ -25,12 +25,12 @@ function loadInsults() {
   }
 }
 
-function getRandomInsult(isPingCommand = false, serverID = "") {
+function getRandomInsult(_isPingCommand = false, _serverID = "") {
   let insults = loadInsults();
-  if(isPingCommand) {
-    if(serverID === process.env.FTT_ID) insults = [...insults, process.env.FTT_EASTER_EGG];
-    if(serverID === process.env.OPLS_ID) insults = [...insults, process.env.OPLS_EASTER_EGG];
-  }
+  // if(isPingCommand) {
+  //   if(serverID === process.env.FTT_ID) insults = [...insults, process.env.FTT_EASTER_EGG];
+  //   if(serverID === process.env.OPLS_ID) insults = [...insults, process.env.OPLS_EASTER_EGG];
+  // }
 
   if (insults.length === 0) return "Connard";
 

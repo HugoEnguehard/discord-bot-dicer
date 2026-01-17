@@ -1,37 +1,24 @@
-const fs = require('fs');
-const path = require('path');
+const { handleTruthEasterEgg } = require('../services/truths/handleEasterEgg');
+const { getRandomTruth } = require('../services/truths/loader');
 
 module.exports = {
   name: 'truth',
-  description: 'Révèle une vérité universelle aléatoire.',
+  description: 'Répond une vérité aléatoire.',
   async execute(message) {
     try {
-      // Chargement du JSON
-      const filePath = path.join(__dirname, '..', 'data', 'truths.json');
+      const truth = getRandomTruth(true, message.guild.id);
 
-      if (!fs.existsSync(filePath)) {
-        return message.reply("Erreur : Le fichier truths.json est introuvable.");
-      }
+      // Réponse publique
+      const reply = `${'```'}${truth}${'```'}`;
+      await message.reply(reply);
 
-      const raw = fs.readFileSync(filePath, 'utf8');
-      const truths = JSON.parse(raw);
+      // Vérification des Easter Eggs
+      await handleTruthEasterEgg(message, truth);
 
-      if (!Array.isArray(truths) || truths.length === 0) {
-        return message.reply("Aucune vérité disponible dans truths.json.");
-      }
-
-      // Tirage aléatoire
-      const pick = truths[Math.floor(Math.random() * truths.length)];
-
-      const reply = `${'```'}TRUTH
-${pick}
-${'```'}`;
-
-      return message.reply(reply);
-
-    } catch (err) {
-      console.error("Erreur dans !truth :", err);
-      return message.reply("Une erreur est survenue dans TRUTH.");
+      return;
+    } catch (error) {
+      console.error('Erreur dans !truth', error.message);
+      return message.reply('Une erreur est survenue dans TRUTH.');
     }
   },
 };
