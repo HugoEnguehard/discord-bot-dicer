@@ -11,6 +11,7 @@ const coin = require('./coin');
 const insult = require('./insult');
 const stopinsults = require('./stopinsults');
 const showinsults = require('./showinsults');
+const createpnj = require('./createpnj');
 
 const commands = {
   [roll.name]: roll,
@@ -26,6 +27,7 @@ const commands = {
   [insult.name]: insult,
   [stopinsults.name]: stopinsults,
   [showinsults.name]: showinsults,
+  [createpnj.name]: createpnj,
 };
 
 module.exports = { commands };

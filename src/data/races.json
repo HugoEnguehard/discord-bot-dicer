@@ -1,0 +1,44 @@
+{
+  "hylien": {
+    "label": "Hylien",
+    "stats": {
+      "pv": 10,
+      "mana": 11
+    }
+  },
+  "zora": {
+    "label": "Zora",
+    "stats": {
+      "pv": 11,
+      "mana": 10
+    }
+  },
+  "goron": {
+    "label": "Goron",
+    "stats": {
+      "pv": 14,
+      "mana": 7
+    }
+  },
+  "kokiri": {
+    "label": "Kokiri",
+    "stats": {
+      "pv": 7,
+      "mana": 14
+    }
+  },
+  "sheikah": {
+    "label": "Sheïkah",
+    "stats": {
+      "pv": 12,
+      "mana": 12
+    }
+  },
+  "subrosien": {
+    "label": "Subrosien",
+    "stats": {
+      "pv": 9,
+      "mana": 12
+    }
+  }
+}

@@ -1,0 +1,762 @@
+{
+  "assassin_combat": {
+    "label": "Assassin de Combat",
+    "perLevel": {
+      "1": {
+        "pv": 8,
+        "mana": 4,
+        "secStats": 4,
+        "magStats": 4,
+        "skillsGeneral": 1,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "2": {
+        "pv": 7,
+        "mana": 5,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 1
+      },
+      "3": {
+        "pv": 7,
+        "mana": 4,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 0,
+        "skillsSpecific": 0,
+        "spellSlots": 1
+      },
+      "4": {
+        "pv": 8,
+        "mana": 4,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "5": {
+        "pv": 9,
+        "mana": 4,
+        "secStats": 3,
+        "magStats": 2,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 1
+      },
+      "6": {
+        "pv": 8,
+        "mana": 3,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "7": {
+        "pv": 8,
+        "mana": 4,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 2
+      },
+      "8": {
+        "pv": 7,
+        "mana": 4,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 1
+      },
+      "9": {
+        "pv": 9,
+        "mana": 3,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 1
+      },
+      "10": {
+        "pv": 9,
+        "mana": 5,
+        "secStats": 3,
+        "magStats": 4,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      }
+    }
+  },
+  "assassin_mage": {
+    "label": "Assassin Mage",
+    "perLevel": {
+      "1": {
+        "pv": 4,
+        "mana": 8,
+        "secStats": 4,
+        "magStats": 4,
+        "skillsGeneral": 1,
+        "skillsSpecific": 1,
+        "spellSlots": 3
+      },
+      "2": {
+        "pv": 6,
+        "mana": 6,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "3": {
+        "pv": 4,
+        "mana": 6,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 0,
+        "skillsSpecific": 0,
+        "spellSlots": 2
+      },
+      "4": {
+        "pv": 6,
+        "mana": 6,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "5": {
+        "pv": 5,
+        "mana": 7,
+        "secStats": 3,
+        "magStats": 2,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 1
+      },
+      "6": {
+        "pv": 6,
+        "mana": 6,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "7": {
+        "pv": 5,
+        "mana": 6,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 2
+      },
+      "8": {
+        "pv": 6,
+        "mana": 6,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "9": {
+        "pv": 7,
+        "mana": 6,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 2
+      },
+      "10": {
+        "pv": 6,
+        "mana": 8,
+        "secStats": 3,
+        "magStats": 4,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      }
+    }
+  },
+  "chevalier": {
+    "label": "Chevalier",
+    "perLevel": {
+      "1": {
+        "pv": 9,
+        "mana": 3,
+        "secStats": 4,
+        "magStats": 4,
+        "skillsGeneral": 1,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "2": {
+        "pv": 8,
+        "mana": 4,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "3": {
+        "pv": 9,
+        "mana": 4,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 0,
+        "skillsSpecific": 0,
+        "spellSlots": 1
+      },
+      "4": {
+        "pv": 8,
+        "mana": 4,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "5": {
+        "pv": 8,
+        "mana": 3,
+        "secStats": 3,
+        "magStats": 2,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 1
+      },
+      "6": {
+        "pv": 8,
+        "mana": 3,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "7": {
+        "pv": 7,
+        "mana": 4,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 2
+      },
+      "8": {
+        "pv": 9,
+        "mana": 4,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 1
+      },
+      "9": {
+        "pv": 9,
+        "mana": 3,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 2
+      },
+      "10": {
+        "pv": 10,
+        "mana": 4,
+        "secStats": 3,
+        "magStats": 4,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      }
+    }
+  },
+  "guerrier": {
+    "label": "Guerrier",
+    "perLevel": {
+      "1": {
+        "pv": 10,
+        "mana": 2,
+        "secStats": 4,
+        "magStats": 4,
+        "skillsGeneral": 1,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "2": {
+        "pv": 9,
+        "mana": 3,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 1
+      },
+      "3": {
+        "pv": 8,
+        "mana": 3,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 0,
+        "skillsSpecific": 0,
+        "spellSlots": 1
+      },
+      "4": {
+        "pv": 9,
+        "mana": 4,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "5": {
+        "pv": 9,
+        "mana": 3,
+        "secStats": 3,
+        "magStats": 2,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 1
+      },
+      "6": {
+        "pv": 8,
+        "mana": 4,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "7": {
+        "pv": 10,
+        "mana": 2,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 1
+      },
+      "8": {
+        "pv": 8,
+        "mana": 3,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 1
+      },
+      "9": {
+        "pv": 9,
+        "mana": 2,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 1
+      },
+      "10": {
+        "pv": 10,
+        "mana": 4,
+        "secStats": 3,
+        "magStats": 4,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      }
+    }
+  },
+  "mage_de_combat": {
+    "label": "Mage de Combat",
+    "perLevel": {
+      "1": {
+        "pv": 7,
+        "mana": 5,
+        "secStats": 4,
+        "magStats": 4,
+        "skillsGeneral": 1,
+        "skillsSpecific": 1,
+        "spellSlots": 3
+      },
+      "2": {
+        "pv": 6,
+        "mana": 5,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "3": {
+        "pv": 5,
+        "mana": 6,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 0,
+        "skillsSpecific": 0,
+        "spellSlots": 2
+      },
+      "4": {
+        "pv": 7,
+        "mana": 5,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "5": {
+        "pv": 6,
+        "mana": 6,
+        "secStats": 3,
+        "magStats": 2,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 2
+      },
+      "6": {
+        "pv": 7,
+        "mana": 5,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 3
+      },
+      "7": {
+        "pv": 8,
+        "mana": 4,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 2
+      },
+      "8": {
+        "pv": 6,
+        "mana": 6,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "9": {
+        "pv": 7,
+        "mana": 5,
+        "secStats": 2,
+        "magStats": 2,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 2
+      },
+      "10": {
+        "pv": 6,
+        "mana": 8,
+        "secStats": 3,
+        "magStats": 4,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      }
+    }
+  },
+  "mage_de_lumiere": {
+    "label": "Mage de Lumière",
+    "perLevel": {
+      "1": {
+        "pv": 3,
+        "mana": 9,
+        "secStats": 4,
+        "magStats": 4,
+        "skillsGeneral": 1,
+        "skillsSpecific": 1,
+        "spellSlots": 4
+      },
+      "2": {
+        "pv": 4,
+        "mana": 8,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 3
+      },
+      "3": {
+        "pv": 3,
+        "mana": 8,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 0,
+        "spellSlots": 2
+      },
+      "4": {
+        "pv": 3,
+        "mana": 9,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 3
+      },
+      "5": {
+        "pv": 4,
+        "mana": 8,
+        "secStats": 3,
+        "magStats": 3,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 2
+      },
+      "6": {
+        "pv": 4,
+        "mana": 9,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "7": {
+        "pv": 4,
+        "mana": 7,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 3
+      },
+      "8": {
+        "pv": 4,
+        "mana": 8,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "9": {
+        "pv": 2,
+        "mana": 9,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 2
+      },
+      "10": {
+        "pv": 4,
+        "mana": 10,
+        "secStats": 3,
+        "magStats": 4,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 3
+      }
+    }
+  },
+  "mage_des_tenebres": {
+    "label": "Mage des Ténèbres",
+    "perLevel": {
+      "1": {
+        "pv": 4,
+        "mana": 8,
+        "secStats": 4,
+        "magStats": 4,
+        "skillsGeneral": 1,
+        "skillsSpecific": 1,
+        "spellSlots": 4
+      },
+      "2": {
+        "pv": 3,
+        "mana": 9,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "3": {
+        "pv": 5,
+        "mana": 7,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 0,
+        "spellSlots": 2
+      },
+      "4": {
+        "pv": 4,
+        "mana": 8,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 3
+      },
+      "5": {
+        "pv": 3,
+        "mana": 9,
+        "secStats": 3,
+        "magStats": 3,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 2
+      },
+      "6": {
+        "pv": 4,
+        "mana": 8,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "7": {
+        "pv": 5,
+        "mana": 7,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 3
+      },
+      "8": {
+        "pv": 3,
+        "mana": 9,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "9": {
+        "pv": 4,
+        "mana": 7,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 2
+      },
+      "10": {
+        "pv": 5,
+        "mana": 8,
+        "secStats": 3,
+        "magStats": 4,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 3
+      }
+    }
+  },
+  "mage_elementaire": {
+    "label": "Mage Élémentaire",
+    "perLevel": {
+      "1": {
+        "pv": 2,
+        "mana": 10,
+        "secStats": 4,
+        "magStats": 4,
+        "skillsGeneral": 1,
+        "skillsSpecific": 1,
+        "spellSlots": 4
+      },
+      "2": {
+        "pv": 3,
+        "mana": 9,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 3
+      },
+      "3": {
+        "pv": 3,
+        "mana": 9,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 0,
+        "spellSlots": 2
+      },
+      "4": {
+        "pv": 4,
+        "mana": 8,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 3
+      },
+      "5": {
+        "pv": 2,
+        "mana": 10,
+        "secStats": 3,
+        "magStats": 3,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 2
+      },
+      "6": {
+        "pv": 3,
+        "mana": 9,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 3
+      },
+      "7": {
+        "pv": 4,
+        "mana": 8,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 3
+      },
+      "8": {
+        "pv": 2,
+        "mana": 9,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 2
+      },
+      "9": {
+        "pv": 3,
+        "mana": 9,
+        "secStats": 2,
+        "magStats": 3,
+        "skillsGeneral": 1,
+        "skillsSpecific": 0,
+        "spellSlots": 2
+      },
+      "10": {
+        "pv": 4,
+        "mana": 9,
+        "secStats": 3,
+        "magStats": 4,
+        "skillsGeneral": 0,
+        "skillsSpecific": 1,
+        "spellSlots": 3
+      }
+    }
+  }
+}
