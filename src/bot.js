@@ -1,5 +1,6 @@
 require('./runtime');
 require('dotenv').config();
+require('./services/dataCheck');
 const { Client, IntentsBitField } = require('discord.js');
 const { commands } = require('./commands');
 const { initCurrentWeekFile } = require('./services/storage');

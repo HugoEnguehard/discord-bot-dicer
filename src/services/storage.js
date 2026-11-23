@@ -36,7 +36,20 @@ function readJsonFile(filePath) {
 }
 
 function writeJsonFile(filePath, data) {
-  fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
+  // Keep the previous valid week if writing is interrupted before replacement.
+  const temporary = filePath + '.pending-' + require('node:crypto').randomUUID();
+  let fd;
+  try {
+    fd = fs.openSync(temporary, 'wx', 0o600);
+    fs.writeFileSync(fd, JSON.stringify(data, null, 2));
+    fs.fsyncSync(fd);
+    fs.closeSync(fd);
+    fd = undefined;
+    fs.renameSync(temporary, filePath);
+  } finally {
+    if (fd !== undefined) fs.closeSync(fd);
+    if (fs.existsSync(temporary)) fs.unlinkSync(temporary);
+  }
 }
 
 // Supprime les semaines les plus anciennes du cache s'il y en a trop
