@@ -32,7 +32,10 @@ module.exports = {
       return `• ${category} : ${selected}`;
     });
     return message.reply({
-      content: `Combinaison Power UP aléatoire pour **Aska** :\n\n` + '```\n' + selections.join('\n') + '\n```',
+      embeds: [{
+        color: 0x5865F2,
+        description: `Combinaison Power UP aléatoire pour **Aska** :\n\n${selections.join('\n')}`,
+      }],
       allowedMentions: { parse: [], repliedUser: false },
     });
   },
