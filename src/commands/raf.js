@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
   name: 'raf',
-  description: 'Génère une combinaison Power UP aléatoire pour le joueur.',
+  description: 'Génère une combinaison Power UP aléatoire pour Aska.',
   async execute(message) {
     let categories;
     try {
@@ -27,13 +27,12 @@ module.exports = {
       return message.reply('Impossible de générer la combinaison Power UP : le fichier raf.json est introuvable ou invalide.');
     }
 
-    const player = message.member?.displayName || message.author.globalName || message.author.username;
     const selections = categories.map(([category, options]) => {
       const selected = options[Math.floor(Math.random() * options.length)];
-      return `${category} : ${selected}`;
+      return `• ${category} : ${selected}`;
     });
     return message.reply({
-      content: `Combinaison Power UP aléatoire pour ${player} :\n${selections.join('\n')}`,
+      content: `Combinaison Power UP aléatoire pour **Aska** :\n\n` + '```\n' + selections.join('\n') + '\n```',
       allowedMentions: { parse: [], repliedUser: false },
     });
   },
