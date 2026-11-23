@@ -1,4 +1,27 @@
-node_modules
+# Secrets: keep reviewed templates only.
 .env
-package-lock.json
-src/data
+.env.*
+*.env
+*.env.*
+!.env.example
+secrets/
+.console-password
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Dependencies, logs and private runtime backups.
+node_modules/
+*.log
+logs/
+/data/
+/backups/
+*.dump
+*.backup
+*.sqlite*
+*.bak
+
+# Runtime dice data; the reviewed RAF source remains versioned.
+src/data/*
+!src/data/raf.json

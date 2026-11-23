@@ -29,6 +29,9 @@ module.exports = {
           !fate gauche / droite
           !fate A / B / C / D
 
+    - !raf :
+        Génère une combinaison Power UP aléatoire pour toi.
+
     - !truth :
         Affiche une vérité universelle aléatoire (meta-JDR).
 

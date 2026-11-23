@@ -1,8 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
+let cached = null;
 function loadTruths() {
-  const filePath = path.join(__dirname, '..', '..', 'data', 'truths.json');
+  const filePath = process.env.TRUTHS_FILE || path.join(__dirname, '..', '..', 'data', 'truths.json');
 
   if (!fs.existsSync(filePath)) {
     console.warn("[Truths] Le fichier truths.json n'existe pas.");
@@ -10,15 +11,20 @@ function loadTruths() {
   }
 
   try {
+    const stat = fs.statSync(filePath);
+    const key = [filePath, stat.ino, stat.mtimeMs, stat.ctimeMs, stat.size].join(':');
+    if (cached?.key === key) return cached.truths;
     const raw = fs.readFileSync(filePath, 'utf8');
-    const insults = JSON.parse(raw);
+    const truths = JSON.parse(raw);
 
-    if (!Array.isArray(insults)) {
+    if (!Array.isArray(truths)) {
       console.error("[Truths] Le JSON n'est pas un tableau.");
       return [];
     }
 
-    return insults;
+    const valid = truths.filter(value => typeof value === 'string' && value.trim());
+    cached = {key, truths: valid};
+    return valid;
   } catch (err) {
     console.error("[Truths] Erreur de lecture du JSON :", err.message);
     return [];

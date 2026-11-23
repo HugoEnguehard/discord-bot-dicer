@@ -1,0 +1,22 @@
+**
+!package.json
+!package-lock.json
+!src/
+!src/**
+src/data/
+**/.env*
+**/*.log
+
+# Never transfer private runtime files into the Docker build context.
+**/.env*
+**/*.env
+**/*.env.*
+**/secrets/**
+**/*.key
+**/*.pem
+**/*.p12
+**/*.pfx
+**/*.sqlite*
+**/*.log
+**/*.bak
+**/*.local.*

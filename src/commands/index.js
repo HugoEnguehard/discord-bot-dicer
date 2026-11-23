@@ -1,3 +1,4 @@
+const raf = require('./raf');
 const roll = require('./roll');
 const stats = require('./stats');
 const help = require('./help');
@@ -14,6 +15,7 @@ const showinsults = require('./showinsults');
 const createpnj = require('./createpnj');
 
 const commands = {
+  [raf.name]: raf,
   [roll.name]: roll,
   [stats.name]: stats,
   [help.name]: help,
